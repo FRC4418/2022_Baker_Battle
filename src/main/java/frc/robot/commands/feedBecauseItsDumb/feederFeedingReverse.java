@@ -4,38 +4,23 @@
 
 package frc.robot.commands.feedBecauseItsDumb;
 
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.InstantCommand;
 import frc.robot.constants.Settings;
 import frc.robot.subsystems.Feeder;
 
-public class feederFeedingReverse extends CommandBase {
+// NOTE:  Consider using this command inline, rather than writing a subclass.  For more
+// information, see:
+// https://docs.wpilib.org/en/stable/docs/software/commandbased/convenience-features.html
+public class feederFeedingReverse extends InstantCommand {
   private Feeder feeder;
-  /** Creates a new feederFeedingReverse. */
   public feederFeedingReverse(Feeder feeder) {
     this.feeder = feeder;
     addRequirements(feeder);
-    // Use addRequirements() here to declare subsystem dependencies.
   }
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {}
-
-  // Called every time the scheduler runs while the command is scheduled.
-  @Override
-  public void execute() {
+  public void initialize() {
     Feeder.feed(Settings.Feeder.FEEDER_NOT_FED.get());
-  }
-
-  // Called once the command ends or is interrupted.
-  @Override
-  public void end(boolean interrupted) {
-    Feeder.feed(0.0);
-  }
-
-  // Returns true when the command should end.
-  @Override
-  public boolean isFinished() {
-    return false;
   }
 }

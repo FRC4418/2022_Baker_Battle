@@ -11,9 +11,9 @@ import frc.robot.subsystems.Feeder;
 // NOTE:  Consider using this command inline, rather than writing a subclass.  For more
 // information, see:
 // https://docs.wpilib.org/en/stable/docs/software/commandbased/convenience-features.html
-public class feederFeeding extends InstantCommand {
+public class feederStopFeeding extends InstantCommand {
   private Feeder feeder;
-  public feederFeeding(Feeder feeder) {
+  public feederStopFeeding(Feeder feeder) {
     this.feeder = feeder;
     addRequirements(feeder);
   }
@@ -21,6 +21,6 @@ public class feederFeeding extends InstantCommand {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
-    Feeder.feed(Settings.Feeder.FEEDER_FED.get());
+    Feeder.feed(0.0);
   }
 }

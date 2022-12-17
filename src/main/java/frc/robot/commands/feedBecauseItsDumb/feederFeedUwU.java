@@ -10,6 +10,7 @@ import frc.robot.subsystems.Feeder;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.commands.feedBecauseItsDumb.feederFeed;
 import frc.robot.commands.feedBecauseItsDumb.feederNoFeed;
+import frc.robot.commands.feedBecauseItsDumb.feederStopFeeding;
 
 // NOTE:  Consider using this command inline, rather than writing a subclass.  For more
 // information, see:
@@ -19,6 +20,6 @@ public class feederFeedUwU extends SequentialCommandGroup {
   public feederFeedUwU(Feeder feeder) {
     // Add your commands in the addCommands() call, e.g.
     // addCommands(new FooCommand(), new BarCommand());
-    addCommands(new feederFeed(feeder), new WaitCommand(1.0), new feederNoFeed(feeder));
+    addCommands(new feederFeed(feeder), new WaitCommand(1.0), new feederNoFeed(feeder), new feederStopFeeding(feeder));
   }
 }
