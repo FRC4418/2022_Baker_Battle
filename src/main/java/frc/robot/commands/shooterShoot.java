@@ -24,14 +24,14 @@ public class shooterShoot extends CommandBase {
   @Override
   public void execute() {
     //Settings.Shooter.SHOOT_SPEED.get()
-    Shooter.setVelocity(Settings.Shooter.SHOOT_SPEED.get(), Settings.Shooter.SHOOT_PERCENT.get());
-
+    //Shooter.setVelocity(Settings.Shooter.SHOOT_SPEED.get(), Settings.Shooter.SHOOT_PERCENT.get());
+    Shooter.setVelocity(shooter);
   }
 
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-    Shooter.setVelocity(0.0, 0.0);
+    //Shooter.setVelocity(shooter);
   }
 
   // Returns true when the command should end.

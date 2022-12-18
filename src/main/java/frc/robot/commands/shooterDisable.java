@@ -24,7 +24,7 @@ public class shooterDisable extends CommandBase {
   @Override
   public void execute() {
     //Settings.Shooter.SHOOT_SPEED.get()
-    Shooter.setVelocity(0.0,0);
+    Shooter.setVelocity(shooter);
 
   }
 

@@ -10,16 +10,17 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+//import frc.robot.commands.number;
 import frc.robot.constants.Ports;
 import frc.robot.constants.Settings;
 
 public class Shooter extends SubsystemBase {
-  final static WPI_TalonFX shootMotor = new WPI_TalonFX(Ports.Shooter.TOP);
-  final static WPI_TalonSRX shootMotor2 = new WPI_TalonSRX(Ports.Shooter.BOTTOM);
+  final WPI_TalonFX shootMotor = new WPI_TalonFX(Ports.Shooter.TOP);
+  final WPI_TalonSRX shootMotor2 = new WPI_TalonSRX(Ports.Shooter.BOTTOM);
 
   public Shooter() {
     shootMotor.configFactoryDefault();
-
+    shootMotor2.configFactoryDefault();
 
     // Config closed-loop controls
     shootMotor.config_kF(Settings.Shooter.PID.kSlot, 
@@ -36,10 +37,15 @@ public class Shooter extends SubsystemBase {
     
   }
 
-  public static void setVelocity(Number Velocity, Number Percent){
-    shootMotor.set(ControlMode.Velocity, (double) Velocity);
-    shootMotor2.set(ControlMode.PercentOutput, (double) Percent);
-  }
+  // public static void setVelocity(Number number, Number Percent){
+  //   shootMotor.set(ControlMode.Velocity, (double) number);
+  //   shootMotor2.set(ControlMode.PercentOutput, (double) Percent);
+  // }
+
+    public static void setVelocity(Shooter shooter) {
+      shooter.shootMotor.setVoltage(10.0);
+      shooter.shootMotor2.setVoltage(10.0);
+    }
 
   public void setPercentOutput(Number speed){
     shootMotor.set(ControlMode.PercentOutput, (double) speed);
