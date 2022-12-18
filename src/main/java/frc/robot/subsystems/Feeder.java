@@ -9,6 +9,7 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.FeedbackDevice;
 
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.constants.Ports;
 import frc.robot.constants.Settings;
@@ -16,6 +17,8 @@ import frc.robot.constants.Settings;
 
 public class Feeder extends SubsystemBase {
 final static WPI_TalonSRX feederFeed = new WPI_TalonSRX(Ports.Feeder.FEEDER);
+public static DigitalInput topSwitch = new DigitalInput(3);
+public static DigitalInput bottomSwitch = new DigitalInput(4);
 
   public Feeder() {
     

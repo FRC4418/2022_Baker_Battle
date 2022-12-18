@@ -37,7 +37,7 @@ feeder.feed(0.0);
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-if (!toplimitSwitch.get()){
+if (Feeder.topSwitch.get() == true){
   return true;
 }
 return false;
