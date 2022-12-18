@@ -52,6 +52,7 @@ final static WPI_TalonSRX feederFeed = new WPI_TalonSRX(Ports.Feeder.FEEDER);
 
   
   public static void feed(Number percent){
-    feederFeed.set(ControlMode.PercentOutput, (Double) percent);
+    feederFeed.set((double)percent);
+    //   (ControlMode.PercentOutput, (Double) percent);
   }
 }

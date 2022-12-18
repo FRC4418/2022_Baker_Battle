@@ -19,6 +19,8 @@ import frc.robot.subsystems.Feeder;
 import frc.robot.commands.DrivetrainDrive;
 
 import frc.robot.commands.shooterShoot;
+import frc.robot.commands.feedBecauseItsDumb.feedButtonOne;
+import frc.robot.commands.feedBecauseItsDumb.feedButtonTwo;
 import frc.robot.commands.feedBecauseItsDumb.feederFeedUwU;
 import frc.robot.commands.feedBecauseItsDumb.feederFeeding;
 import frc.robot.commands.feedBecauseItsDumb.feederFeedingReverse;
@@ -66,7 +68,8 @@ public class RobotContainer {
 
   public void configureButtonBindings() {
     driver.getLeftButton().whenHeld(new shooterShoot(shooter));
-    driver.getRightButton().whenHeld(new feederLimitSwitch(feeder));
+    driver.getRightButton().whenHeld(new feedButtonOne(feeder));
+    driver.getTopButton().whenHeld(new feedButtonTwo(feeder));
   }
 
 
