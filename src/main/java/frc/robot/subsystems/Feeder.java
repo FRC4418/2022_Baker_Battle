@@ -16,7 +16,11 @@ import frc.robot.constants.Settings;
 
 
 public class Feeder extends SubsystemBase {
+<<<<<<< Updated upstream
 public static WPI_TalonSRX feederFeed = new WPI_TalonSRX(Ports.Feeder.FEEDER);
+=======
+final static WPI_TalonSRX feederFeed = new WPI_TalonSRX(Ports.Feeder.FEEDER);
+>>>>>>> Stashed changes
 public static DigitalInput topSwitch = new DigitalInput(3);
 public static DigitalInput bottomSwitch = new DigitalInput(4);
 
