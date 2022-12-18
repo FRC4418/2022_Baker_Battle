@@ -10,7 +10,6 @@ import frc.robot.subsystems.Feeder;
 
 public class feedButtonTwo extends CommandBase {
   public Feeder feeder;
-  DigitalInput bottomlimitSwitch = new DigitalInput(4);
   /** Creates a new feedButtonOne. */
   public feedButtonTwo(Feeder feeder) {
     this.feeder = feeder;
@@ -21,7 +20,7 @@ public class feedButtonTwo extends CommandBase {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
-    System.out.println(bottomlimitSwitch.get());
+    System.out.println(Feeder.bottomSwitch.get());
   }
 
   // Called every time the scheduler runs while the command is scheduled.
@@ -39,7 +38,7 @@ public class feedButtonTwo extends CommandBase {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    if (!bottomlimitSwitch.get()){
+    if (Feeder.bottomSwitch.get() == true){
       return true;
     }
     return false;

@@ -10,7 +10,6 @@ import frc.robot.subsystems.Feeder;
 
 public class feedButtonOne extends CommandBase {
   public Feeder feeder;
-  DigitalInput toplimitSwitch = new DigitalInput(3);
   /** Creates a new feedButtonOne. */
   public feedButtonOne(Feeder feeder) {
 addRequirements(feeder);
@@ -20,7 +19,9 @@ this.feeder = feeder;
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {}
+  public void initialize() {
+    System.out.println(Feeder.bottomSwitch.get());
+  }
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
@@ -37,7 +38,7 @@ feeder.feed(0.0);
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-if (!toplimitSwitch.get()){
+if (Feeder.topSwitch.get() == true){
   return true;
 }
 return false;
