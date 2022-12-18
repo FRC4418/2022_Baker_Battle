@@ -106,7 +106,7 @@ public interface Settings {
 
     public interface Shooter {
         // Low Pass Filter and deadband for Feeder Controls
-        SmartNumber SHOOT_SPEED = new SmartNumber("Feeder and Shooter Settings/Shooting Speed", 230000.0);
+        SmartNumber SHOOT_SPEED = new SmartNumber("Feeder and Shooter Settings/Shooting Speed", 2800000.0);
         SmartNumber SHOOT_PERCENT = new SmartNumber("Shooter Settings/Back Wheel Percent Output", -1);
 
         public interface PID {
