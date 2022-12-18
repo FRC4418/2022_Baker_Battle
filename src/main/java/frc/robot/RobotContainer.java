@@ -27,6 +27,7 @@ import frc.robot.constants.Ports;
 import frc.robot.constants.Settings;
 import frc.robot.constants.Ports.Gamepad;
 import frc.robot.commands.blankAuto;
+import frc.robot.commands.feederLimitSwitch;
 
 /**
  * This class is where the bulk of the robot should be declared. Since
@@ -65,8 +66,7 @@ public class RobotContainer {
 
   public void configureButtonBindings() {
     driver.getLeftButton().whenHeld(new shooterShoot(shooter));
-    driver.getRightButton().whenPressed(new feederFeedUwU(feeder));
-    driver.getTopButton().whenHeld(new feederFeedingReverse(feeder));
+    driver.getRightButton().whenHeld(new feederLimitSwitch(feeder));
   }
 
 

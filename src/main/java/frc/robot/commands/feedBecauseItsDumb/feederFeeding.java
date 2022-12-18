@@ -21,6 +21,6 @@ public class feederFeeding extends InstantCommand {
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
-    Feeder.feed(Settings.Feeder.FEEDER_FED.get());
+    feeder.feed(Settings.Feeder.FEEDER_FED.get());
   }
 }
