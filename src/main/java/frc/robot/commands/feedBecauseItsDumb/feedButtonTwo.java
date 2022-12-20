@@ -38,7 +38,7 @@ public class feedButtonTwo extends CommandBase {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    if (Feeder.bottomSwitch.get() == true){
+    if (Feeder.bottomSwitch.get() == false){
       return true;
     }
     return false;

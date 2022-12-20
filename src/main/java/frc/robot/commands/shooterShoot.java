@@ -28,10 +28,11 @@ public class shooterShoot extends CommandBase {
     Shooter.setVelocity(shooter);
   }
 
+
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-    //Shooter.setVelocity(shooter);
+    Shooter.stopShooter(shooter);
   }
 
   // Returns true when the command should end.

@@ -24,7 +24,7 @@ public class shooterDisable extends CommandBase {
   @Override
   public void execute() {
     //Settings.Shooter.SHOOT_SPEED.get()
-    Shooter.setVelocity(shooter);
+    Shooter.stopShooter(shooter);
 
   }
 
@@ -35,6 +35,7 @@ public class shooterDisable extends CommandBase {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
+    Shooter.stopShooter(shooter);
     return false;
   }
 }
