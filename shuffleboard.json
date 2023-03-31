@@ -19,7 +19,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Base Turn Speed",
-              "_title": "Base Turn Speed"
+              "_title": "Base Turn Speed",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "3,0": {
@@ -30,7 +32,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Turn Deadband",
-              "_title": "Turn Deadband"
+              "_title": "Turn Deadband",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "5,0": {
@@ -41,7 +45,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Turn Filtering",
-              "_title": "Turn Filtering"
+              "_title": "Turn Filtering",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "2,4": {
@@ -52,7 +58,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Turn Power",
-              "_title": "Turn Power"
+              "_title": "Turn Power",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "5,4": {
@@ -63,7 +71,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Speed Power",
-              "_title": "Speed Power"
+              "_title": "Speed Power",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "3,2": {
@@ -74,7 +84,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Speed Deadband",
-              "_title": "Speed Deadband"
+              "_title": "Speed Deadband",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "5,2": {
@@ -85,7 +97,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Speed Filtering",
-              "_title": "Speed Filtering"
+              "_title": "Speed Filtering",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "0,2": {
@@ -97,6 +111,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Max Speed",
               "_title": "Max Speed",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": 0.0,
               "Slider Settings/Max": 1.0,
               "Slider Settings/Block increment": 0.0625,
@@ -112,6 +128,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Max Speed Angle",
               "_title": "Max Turn Speed",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": 0.0,
               "Slider Settings/Max": 1.0,
               "Slider Settings/Block increment": 0.0625,
@@ -126,7 +144,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/ Invert Steering, Angle Setpoint Threshold",
-              "_title": "Invert Steering, Angle Setpoint Threshold"
+              "_title": "Invert Steering, Angle Setpoint Threshold",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "10,2": {
@@ -137,7 +157,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Displacement Auto",
-              "_title": "Displacement Auto"
+              "_title": "Displacement Auto",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "10,1": {
@@ -148,7 +170,9 @@
             "content": {
               "_type": "Text View",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Time Driving Auto",
-              "_title": "Time Driving Auto"
+              "_title": "Time Driving Auto",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "8,2": {
@@ -159,7 +183,9 @@
             "content": {
               "_type": "ComboBox Chooser",
               "_source0": "network_table:///SmartDashboard/Driver Settings/Autonomous",
-              "_title": "autoChooser"
+              "_title": "autoChooser",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           }
         }
@@ -185,6 +211,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Feeder and Shooter Settings/Shooting Speed",
               "_title": "Shooting Speed",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": 0.0,
               "Slider Settings/Max": 65000.0,
               "Slider Settings/Block increment": 100.0,
@@ -200,6 +228,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Feeder and Shooter Settings/Roller Spin Speed",
               "_title": "Roller Spin Speed",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": 0.0,
               "Slider Settings/Max": 1.0,
               "Slider Settings/Block increment": 0.0625,
@@ -215,6 +245,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Feeder and Shooter Settings/Intake Position Up",
               "_title": "Intake Position Up",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": -2000.0,
               "Slider Settings/Max": 2000.0,
               "Slider Settings/Block increment": 100.0,
@@ -230,6 +262,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Feeder and Shooter Settings/Intake Position Down",
               "_title": "Intake Position Down",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": 5000.0,
               "Slider Settings/Max": 20000.0,
               "Slider Settings/Block increment": 100.0,
@@ -245,6 +279,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Feeder and Shooter Settings/Upper Intake Shoot Speed",
               "_title": "Upper Intake Shoot Speed",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": 0.0,
               "Slider Settings/Max": 1.0,
               "Slider Settings/Block increment": 0.0625,
@@ -274,6 +310,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Climber Settings/Climber Speed",
               "_title": "Climber Speed",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": 0.0,
               "Slider Settings/Max": 1.0,
               "Slider Settings/Block increment": 0.0625,
@@ -289,6 +327,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Climber Settings/Ratchet Release Angle",
               "_title": "Winch Servo Release Angle",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": -90.0,
               "Slider Settings/Max": 90.0,
               "Slider Settings/Block increment": 2.0,
@@ -304,6 +344,8 @@
               "_type": "Number Slider",
               "_source0": "network_table:///SmartDashboard/Climber Settings/Ratchet Engage Angle",
               "_title": "Winch Servo Engage Angle",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Slider Settings/Min": -90.0,
               "Slider Settings/Max": 90.0,
               "Slider Settings/Block increment": 2.0,
@@ -332,21 +374,29 @@
             "content": {
               "_type": "List Layout",
               "_title": "List Layout",
+              "_glyph": 149,
+              "_showGlyph": false,
               "Layout/Label position": "BOTTOM",
               "_children": [
                 {
                   "_type": "Motor Controller",
                   "_title": "Motor Controller",
+                  "_glyph": 148,
+                  "_showGlyph": false,
                   "Visuals/Orientation": "HORIZONTAL"
                 },
                 {
                   "_type": "Motor Controller",
                   "_title": "Motor Controller",
+                  "_glyph": 148,
+                  "_showGlyph": false,
                   "Visuals/Orientation": "HORIZONTAL"
                 },
                 {
                   "_type": "Motor Controller",
                   "_title": "Motor Controller",
+                  "_glyph": 148,
+                  "_showGlyph": false,
                   "Visuals/Orientation": "HORIZONTAL"
                 }
               ]
@@ -360,6 +410,8 @@
             "content": {
               "_type": "PDP",
               "_title": "PDP",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Visuals/Show voltage and current values": true
             }
           },
@@ -370,7 +422,9 @@
             ],
             "content": {
               "_type": "Toggle Switch",
-              "_title": "Toggle Switch"
+              "_title": "Toggle Switch",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "6,0": {
@@ -381,6 +435,8 @@
             "content": {
               "_type": "Motor Controller",
               "_title": "Motor Controller",
+              "_glyph": 148,
+              "_showGlyph": false,
               "Visuals/Orientation": "HORIZONTAL"
             }
           },
@@ -391,7 +447,9 @@
             ],
             "content": {
               "_type": "Basic Subsystem",
-              "_title": "Basic Subsystem"
+              "_title": "Basic Subsystem",
+              "_glyph": 148,
+              "_showGlyph": false
             }
           },
           "0,0": {
@@ -402,6 +460,8 @@
             "content": {
               "_type": "List Layout",
               "_title": "List Layout",
+              "_glyph": 149,
+              "_showGlyph": false,
               "Layout/Label position": "BOTTOM",
               "_children": []
             }
@@ -414,13 +474,17 @@
             "content": {
               "_type": "Grid Layout",
               "_title": "Grid Layout",
+              "_glyph": 149,
+              "_showGlyph": false,
               "Layout/Number of columns": 3,
               "Layout/Number of rows": 3,
               "Layout/Label position": "TOP",
               "_children": {
                 "0,0": {
                   "_type": "Command",
-                  "_title": "Command"
+                  "_title": "Command",
+                  "_glyph": 148,
+                  "_showGlyph": false
                 }
               }
             }
@@ -430,9 +494,9 @@
     }
   ],
   "windowGeometry": {
-    "x": -8.0,
-    "y": 0.5714285969734192,
-    "width": 1470.2857666015625,
-    "height": 582.2857055664062
+    "x": -92.0,
+    "y": 28.0,
+    "width": 1386.0,
+    "height": 583.0
   }
 }
